@@ -1,14 +1,6 @@
-const app = require('./app')
-const mongoose =require('mongoose')
 
-
+const app = require("./app");
 
 app.listen(8080,()=>{
-console.log(`App is listening on port:8080`);
-
-})
-
-mongoose
-  .connect("mongodb://localhost/products")
-  .then(() => console.log("connected with DB"))
-  .catch((err) => console.log(err))
+    console.log(`App is running at port 8080`);
+});
