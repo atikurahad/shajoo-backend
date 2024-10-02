@@ -48,7 +48,7 @@ app.use("*", (req, res) => {
 //MongoDB database connection
 async function connectToMongoDB() {
     try {
-        const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@team.by4qiin.mongodb.net/mom&baby`;
+        const uri = `mongodb://0.0.0.0:27017/shajoo`;
         await mongoose.connect(uri);
         console.log("Connected to MongoDB");
 

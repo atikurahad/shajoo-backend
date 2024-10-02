@@ -12,7 +12,7 @@ const emailSend = async (email,emailSub,emailText)=>{
     });
 
     const options={
-        from:"Mom & Baby <info@teamrabbil.com>",
+        from:"Shajoo <info@teamrabbil.com>",
         to:email,
         subject:emailSub,
         text:emailText
